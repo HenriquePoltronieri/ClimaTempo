@@ -32,12 +32,12 @@ document.querySelector('#search').addEventListener('submit', async (event) => {
         document.querySelector("#weather").classList.remove('show');
         showAlert(`
             Não foi possível localizar...<br/>
-            <img src="src/images/404.svg"/>
-        `)
+            Verifique se o nome da cidade está correto.`
+        )
     }
 });
 
-function showInfo(json){
+function showInfo(json) {
     showAlert('');
 
     document.querySelector("#weather").classList.add('show');
