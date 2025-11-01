@@ -31,8 +31,7 @@ document.querySelector('#search').addEventListener('submit', async (event) => {
     } else {
         document.querySelector("#weather").classList.remove('show');
         showAlert(`
-            Não foi possível localizar...
-
+            Não foi possível localizar...<br/>
             <img src="src/images/404.svg"/>
         `)
     }
